@@ -1,14 +1,14 @@
 const BarChart = () => (
   <svg
-    width={59}
-    height={52}
-    viewBox="0 0 59 52"
+    width={40}
+    height={38}
+    viewBox="0 0 40 38"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      d="M0 52V46.2222H59V52H0ZM2.95 43.3333V23.1111H11.8V43.3333H2.95ZM17.7 43.3333V8.66667H26.55V43.3333H17.7ZM32.45 43.3333V17.3333H41.3V43.3333H32.45ZM47.2 43.3333V0H56.05V43.3333H47.2Z"
-      fill="black"
+      d="M10 28V26H30V28H10ZM11 25V18H14V25H11ZM16 25V13H19V25H16ZM21 25V16H24V25H21ZM26 25V10H29V25H26Z"
+      fill="white"
     />
   </svg>
 );
