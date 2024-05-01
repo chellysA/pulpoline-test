@@ -6,12 +6,12 @@ type Variant =
   | "h3"
   | "h4"
   | "h5"
-  | "sh1"
-  | "sh2"
-  | "sh3"
-  | "light"
-  | "xs"
-  | "small";
+  | "subheading1"
+  | "subheading2"
+  | "subheading3"
+  | "paragraph1"
+  | "paragraph2"
+  | "paragaraph3";
 
 interface Props {
   variant?: Variant;
@@ -26,30 +26,30 @@ const tags: Record<Variant, ElementType> = {
   h3: "h3",
   h4: "h4",
   h5: "h5",
-  sh1: "p",
-  sh2: "p",
-  sh3: "p",
-  light: "p",
-  xs: "p",
-  small: "p",
+  subheading1: "p",
+  subheading2: "p",
+  subheading3: "p",
+  paragraph1: "p",
+  paragraph2: "p",
+  paragaraph3: "p",
 };
 
 const sizes: Record<Variant, string> = {
-  h1: "text-7xl md:text-8xl font-bold",
-  h2: "text-6xl md:text-7xl font-bold",
-  h3: "text-5xl md:text-6xl font-semibold",
-  h4: "text-4xl md:text-5xl font-semibold",
-  h5: "text-3xl md:text-4xl font-bold",
-  sh1: "text-2xl md:text-3xl font-semibold",
-  sh2: "text-xl md:text-2xl",
-  sh3: "text-lg md:text-xl",
-  light: "text-sm md:text-base font-semibold",
-  xs: "text-xs md:text-sm font-extralight",
-  small: "text-[10px] md: text-xs font-thin",
+  h1: "font-bold",
+  h2: "font-bold",
+  h3: "font-semibold",
+  h4: "font-semibold",
+  h5: "text-xl md:text-3xl font-bold",
+  subheading1: "font-semibold",
+  subheading2: "text-xs md:text-xl",
+  subheading3: "",
+  paragraph1: "font-semibold",
+  paragraph2: "font-extralight",
+  paragaraph3: "font-thin",
 };
 
 export const Typography = ({
-  variant = "light",
+  variant = "paragraph1",
   children,
   className,
   as,
