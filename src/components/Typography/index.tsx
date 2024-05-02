@@ -11,7 +11,8 @@ type Variant =
   | "subheading3"
   | "paragraph1"
   | "paragraph2"
-  | "paragaraph3";
+  | "paragaraph3"
+  | "custom";
 
 interface Props {
   variant?: Variant;
@@ -32,6 +33,7 @@ const tags: Record<Variant, ElementType> = {
   paragraph1: "p",
   paragraph2: "p",
   paragaraph3: "p",
+  custom: "p",
 };
 
 const sizes: Record<Variant, string> = {
@@ -46,6 +48,7 @@ const sizes: Record<Variant, string> = {
   paragraph1: "font-semibold",
   paragraph2: "font-extralight",
   paragaraph3: "font-thin",
+  custom: "",
 };
 
 export const Typography = ({
