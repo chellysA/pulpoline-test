@@ -10,24 +10,27 @@ const OrdersHistorial = () => {
   const [orderIsOpen, setOrderIsOpen] = useState(true);
   const [deliveredIsOpen, setDeliveredIsOpen] = useState(false);
   const [finishedIsOpen, setFinishedIsOpen] = useState(false);
-  const [SeeAllIsOpen, setSeeAllIsOpen] = useState(false);
+  const [seeAllIsOpen, setSeeAllIsOpen] = useState(false);
 
   const handleOrders = () => {
     setOrderIsOpen(true);
     setDeliveredIsOpen(false);
     setFinishedIsOpen(false);
+    setSeeAllIsOpen(false);
   };
 
   const handleDelivered = () => {
     setDeliveredIsOpen(true);
     setOrderIsOpen(false);
     setFinishedIsOpen(false);
+    setSeeAllIsOpen(false);
   };
 
   const handleFinished = () => {
     setFinishedIsOpen(true);
     setOrderIsOpen(false);
     setDeliveredIsOpen(false);
+    setSeeAllIsOpen(false);
   };
 
   const handleSeeAll = () => {
@@ -75,7 +78,7 @@ const OrdersHistorial = () => {
       {orderIsOpen && <OrderDetail />}
       {deliveredIsOpen && <DeliveredDetail />}
       {finishedIsOpen && <FinishedDetail />}
-      {SeeAllIsOpen && <SeeAllDetails />}
+      {seeAllIsOpen && <SeeAllDetails />}
     </section>
   );
 };
