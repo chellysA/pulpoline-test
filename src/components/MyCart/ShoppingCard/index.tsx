@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Add from "../../../assets/icons/Add";
 import Star from "../../../assets/icons/Star";
 import Substract from "../../../assets/icons/Substract";
@@ -10,7 +11,6 @@ interface IShoppingCardProps {
   rating: string;
   review: string;
   price: string;
-  quantity: number;
 }
 const ShoppingCard = ({
   img,
@@ -18,14 +18,15 @@ const ShoppingCard = ({
   rating,
   price,
   review,
-  quantity,
 }: IShoppingCardProps) => {
+  const [counter, setCounter] = useState(1);
+
   return (
     <div className="bg-white rounded-2xl flex p-4">
       <div>
         <img src={img} className="rounded-xl h-full min-w-[120px]" alt="" />
       </div>
-      <div className="w-full ml-2 flex flex-col justify-between">
+      <div className="w-full ml-4 flex flex-col justify-between">
         <div>
           <Typography variant="custom" className="text-base font-medium">
             {description}
@@ -49,13 +50,17 @@ const ShoppingCard = ({
             {price}
           </Typography>
           <div className="flex">
-            <ButtonBase onClick={() => {}}>
+            <ButtonBase onClick={() => counter > 1 && setCounter(counter - 1)}>
               <Substract />
             </ButtonBase>
             <Typography variant="custom" className="text-2xl font-bold mx-4">
-              {quantity}
+              {counter}
             </Typography>
-            <ButtonBase onClick={() => {}}>
+            <ButtonBase
+              onClick={() => {
+                counter >= 1 && setCounter(counter + 1);
+              }}
+            >
               <Add />
             </ButtonBase>
           </div>
