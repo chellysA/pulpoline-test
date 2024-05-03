@@ -1,3 +1,5 @@
+"use client";
+import { useEffect } from "react";
 import "./App.css";
 import Banner from "./components/Banner";
 import Categories from "./components/Categories";
@@ -6,8 +8,17 @@ import MainLayout from "./components/Layout/MainLayout";
 import MyCart from "./components/MyCart";
 import OrdersHistorial from "./components/OrdersHistorial";
 import Rating from "./components/Rating";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
     <>
       {/* <Catalogo /> */}
