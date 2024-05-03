@@ -46,7 +46,7 @@ const sizes: Record<Variant, string> = {
   subheading2: "text-xs md:text-xl",
   subheading3: "",
   paragraph1: "text-sm font-semibold",
-  paragraph2: "font-extralight",
+  paragraph2: "text-xs font-extralight",
   paragraph3: "text-[10px]",
   custom: "",
 };
