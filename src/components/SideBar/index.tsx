@@ -15,7 +15,7 @@ const SideBar = () => {
         <Cutlery />
       </div>
       <ul className="row-span-4">
-        <li className="mb-8 flex justify-center items-center lg:mb-6 hover:backdrop-opacity-10 hover:bg-white/50 hover:rounded-md">
+        <li className="mb-8 flex justify-center items-center lg:mb-6 backdrop-opacity-10 bg-white/50 rounded-md">
           <Frame />
         </li>
         <li className="mb-8 flex justify-center items-center lg:mb-6 hover:backdrop-opacity-10 hover:bg-white/50 hover:rounded-md">
