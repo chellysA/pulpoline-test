@@ -31,12 +31,15 @@ const OrdersHistorialCard = ({
           >
             7 Dec, 16:10
           </Typography>
-          <ButtonBase
-            onClick={() => {}}
-            className="bg-primary px-11 md:px-7 py-3 my-1 md:mt-0 rounded-full text-xs md:text-base text-white font-poppinns"
-          >
-            Order Again
-          </ButtonBase>
+          <div className="relative">
+            <ButtonBase
+              onClick={() => {}}
+              className="bg-primary px-11 md:px-7 py-3 my-1 md:mt-0 rounded-full text-xs md:text-base text-white font-poppinns"
+            >
+              Order Again
+              <span className="top-2 right-8 animate-ping absolute inline-flex h-[70%] w-[60%] rounded-full bg-primary opacity-75"></span>
+            </ButtonBase>
+          </div>
         </div>
       </div>
     </div>

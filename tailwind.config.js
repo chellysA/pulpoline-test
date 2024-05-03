@@ -22,8 +22,8 @@ export default {
         softGrey: "#CACACA",
         lightGrey: "#EEEEEE",
       },
-      images: {
-        cutlery: "url('img/Cutlery.png')",
+      animation: {
+        ping: "ping 2s cubic-bezier(0, 0, 0.2, 1) infinite",
       },
     },
   },

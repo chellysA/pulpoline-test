@@ -6,7 +6,11 @@ interface IRatingProps {
 }
 const RatingCard = ({ title, quantity }: IRatingProps) => {
   return (
-    <div className="bg-white rounded-lg min-w-[182px] md:min-w-[176px] min-h-[82px] md:min-h-[99px] flex flex-col justify-center items-center">
+    <div
+      className="bg-white rounded-lg min-w-[182px] md:min-w-[176px] min-h-[82px] md:min-h-[99px] flex flex-col justify-center items-center"
+      data-aos="flip-left"
+      data-aos-delay="600"
+    >
       <Typography variant="paragraph2" className="text-grey font-medium">
         {title}
       </Typography>

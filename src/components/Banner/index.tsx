@@ -5,7 +5,11 @@ import { Typography } from "../Typography";
 
 const Banner = () => {
   return (
-    <section className="w-full min-w-[200px] min-h-[297px] md:min-h-[202px] bg-secondary flex justify-between md:rounded-2xl">
+    <section
+      className="w-full min-w-[200px] min-h-[297px] md:min-h-[202px] bg-secondary flex justify-between md:rounded-2xl"
+      data-aos="zoom-in"
+      data-aos-delay="600"
+    >
       <div className="flex flex-col max-w-[60%] pl-8 md:p-8 justify-center xl:justify-start items-start">
         <Typography
           variant="custom"

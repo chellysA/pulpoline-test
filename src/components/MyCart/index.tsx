@@ -8,7 +8,12 @@ import Shopping4 from "/img/Shopping4.png";
 
 const MyCart = () => {
   return (
-    <section className="flex flex-col flex-1 mx-7 md:mx-0 mt-2 md:mt-0">
+    <section
+      className="flex flex-col flex-1 mx-7 md:mx-0 mt-2 md:mt-0"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-delay="700"
+    >
       <div className="flex justify-between mb-5">
         <div>
           <Typography variant="custom" className="text-2xl font-semibold">
@@ -18,7 +23,9 @@ const MyCart = () => {
             Shopping is happy
           </Typography>
         </div>
-        <NotificationsGrey />
+        <div className="animate-pulse">
+          <NotificationsGrey />
+        </div>
       </div>
       <div className="flex flex-col justify-between h-full flex-1 gap-2 lg:gap-0 mt-2">
         <ShoppingCard
@@ -27,7 +34,6 @@ const MyCart = () => {
           rating="4.8/5"
           review="(1K+ reviews)"
           price="320$"
-          quantity={1}
         />
         <ShoppingCard
           img={Shopping2}
@@ -35,7 +41,6 @@ const MyCart = () => {
           rating="4.8/5"
           review="(1K+ reviews)"
           price="320$"
-          quantity={1}
         />
         <ShoppingCard
           img={Shopping3}
@@ -43,7 +48,6 @@ const MyCart = () => {
           rating="4.8/5"
           review="(1K+ reviews)"
           price="320$"
-          quantity={1}
         />
         <ShoppingCard
           img={Shopping4}
@@ -51,7 +55,6 @@ const MyCart = () => {
           rating="4.8/5"
           review="(1K+ reviews)"
           price="320$"
-          quantity={1}
         />
       </div>
     </section>

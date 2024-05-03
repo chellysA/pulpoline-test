@@ -10,7 +10,10 @@ import Button from "../ButtonBase";
 
 const SideBar = () => {
   return (
-    <nav className="w-[106px] hidden md:grid pt-8 h-[calc(100vh-64px)] sticky top-8 bg-gradient-to-b from-primary to-orange rounded-3xl grid-rows-7 justify-items-center">
+    <nav
+      className="w-[106px] hidden md:grid pt-8 h-[calc(100vh-64px)] sticky top-8 bg-gradient-to-b from-primary to-orange rounded-3xl grid-rows-7 justify-items-center"
+      data-aos="fade-right"
+    >
       <div className="place-content-start">
         <Cutlery />
       </div>
