@@ -11,7 +11,7 @@ type Variant =
   | "subheading3"
   | "paragraph1"
   | "paragraph2"
-  | "paragaraph3"
+  | "paragraph3"
   | "custom";
 
 interface Props {
@@ -32,7 +32,7 @@ const tags: Record<Variant, ElementType> = {
   subheading3: "p",
   paragraph1: "p",
   paragraph2: "p",
-  paragaraph3: "p",
+  paragraph3: "p",
   custom: "p",
 };
 
@@ -47,7 +47,7 @@ const sizes: Record<Variant, string> = {
   subheading3: "",
   paragraph1: "text-sm font-semibold",
   paragraph2: "font-extralight",
-  paragaraph3: "font-thin",
+  paragraph3: "text-[10px]",
   custom: "",
 };
 
