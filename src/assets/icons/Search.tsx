@@ -1,5 +1,6 @@
 const Search = () => (
   <svg
+    className="scale-75 md:scale-1"
     width={24}
     height={24}
     viewBox="0 0 24 24"

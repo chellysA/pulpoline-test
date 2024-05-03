@@ -1,32 +1,8 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Category1 from "/img/Category1.png";
-import Category2 from "/img/Category2.png";
-import Category3 from "/img/Category3.png";
-import Category1Mobile from "/img/Category1Mobile.png";
-import Category2Mobile from "/img/Category2Mobile.png";
-import Category3Mobile from "/img/Category3Mobile.png";
-
 import { Typography } from "../../Typography";
-
-const categories = [
-  {
-    name: "Indonesia Food",
-    image: "/img/Category1.png",
-    mobileImg: "/img/Category1Mobile.png",
-  },
-  {
-    name: "Japanese Food",
-    image: "/img/Category2.png",
-    mobileImg: "/img/Category2Mobile.png",
-  },
-  {
-    name: "Korean Food",
-    image: "/img/Category3.png",
-    mobileImg: "/img/Category3Mobile.png",
-  },
-];
+import { categories } from "../../../constants/categories";
 
 const CategoriesCarousel = () => {
   var settings = {

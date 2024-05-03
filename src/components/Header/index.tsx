@@ -50,10 +50,10 @@ const Header = () => {
       {toggle && (
         <nav
           className={`${
-            toggle && "block lg:hidden"
+            toggle && "block md:hidden"
           } bg-gradient-to-b from-primary to-orange absolute top-18 z-20 w-full rounded-b-3xl p-4`}
         >
-          <div className="w-1/2 flex justify-start mb-2">
+          <div className="w-full flex justify-start mb-2">
             <SearchBar />
           </div>
           <ul className="grid grid-cols-2">

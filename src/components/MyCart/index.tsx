@@ -5,7 +5,7 @@ import Shopping1 from "/img/Shopping1.png";
 import Shopping2 from "/img/Shopping2.png";
 import Shopping3 from "/img/Shopping3.png";
 import Shopping4 from "/img/Shopping4.png";
-
+//  TODO COLOCar en constanet y hacer map
 const MyCart = () => {
   return (
     <section
