@@ -37,7 +37,7 @@ const OrdersHistorialCard = ({
               className="bg-primary px-11 md:px-7 py-3 my-1 md:mt-0 rounded-full text-xs md:text-base text-white font-poppinns"
             >
               Order Again
-              <span className="top-2 right-8 animate-ping absolute inline-flex h-[70%] w-[60%] rounded-full bg-primary opacity-75"></span>
+              <span className="top-2 right-8 md:animate-ping absolute inline-flex h-[70%] w-[60%] rounded-full md:bg-primary opacity-75"></span>
             </ButtonBase>
           </div>
         </div>
