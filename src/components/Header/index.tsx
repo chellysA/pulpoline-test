@@ -5,7 +5,7 @@ import { Typography } from "../Typography";
 
 const Header = () => {
   return (
-    <div className="flex justify-between md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-2">
+    <header className="flex justify-between md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-2 p-6 md:p-0">
       <div className="flex flex-col items-start">
         <div className="flex md:mb-2">
           <Typography variant="h5" className="text-yellow">
@@ -27,7 +27,7 @@ const Header = () => {
         className="block md:hidden place-self-end self-center"
         children={<Dashboard />}
       />
-    </div>
+    </header>
   );
 };
 export default Header;

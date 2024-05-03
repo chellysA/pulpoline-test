@@ -9,24 +9,22 @@ interface IOrderDetailProps {
 const OrderDetail = ({ img, description }: IOrderDetailProps) => {
   return (
     <div className="bg-white rounded-2xl flex p-4">
-      <div>
-        <img
-          src={img}
-          className="rounded-xl h-full min-w-[108px] md:min-w-[91px]"
-          alt=""
-        />
-      </div>
+      <img
+        src={img}
+        className="rounded-xl h-full lg:min-w-[91px] min-w-[108px] lg:max-h-[91px] max-h-[108px]"
+        alt=""
+      />
       <div className="w-full ml-2 md:ml-5 flex flex-col justify-between">
         <Typography
           variant="custom"
-          className="text-sm md:text-xl font-semibold"
+          className="text-md xl:text-xl font-semibold"
         >
           {description}
         </Typography>
         <div className="md:flex justify-between items-center">
           <Typography
             variant="custom"
-            className="text-xs md:text-xl text-grey font-medium"
+            className="text-md xl:text-xl text-grey font-medium"
           >
             7 Dec, 16:10
           </Typography>
