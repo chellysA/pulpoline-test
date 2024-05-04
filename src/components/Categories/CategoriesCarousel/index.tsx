@@ -5,7 +5,7 @@ import { Typography } from "../../Typography";
 import { categories } from "../../../constants/categories";
 
 const CategoriesCarousel = () => {
-  var settings = {
+  const settings = {
     dots: false,
     infinite: true,
     arrows: false,
