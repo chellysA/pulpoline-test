@@ -14,7 +14,7 @@ const MyCart = () => {
       data-aos-anchor-placement="top-bottom"
       data-aos-delay="700"
     >
-      <div className="flex justify-between mb-5">
+      <div className="flex justify-between mb-2">
         <div>
           <Typography variant="custom" className="text-2xl font-semibold">
             My Cart
