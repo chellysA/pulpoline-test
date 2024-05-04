@@ -9,7 +9,7 @@ import Shopping4 from "/img/Shopping4.png";
 const MyCart = () => {
   return (
     <section
-      className="flex flex-col flex-1 mx-7 md:mx-0 mt-2 md:mt-0"
+      className="flex flex-col flex-1 mx-7 md:mx-0 md:mt-0"
       data-aos="fade-up"
       data-aos-anchor-placement="top-bottom"
       data-aos-delay="700"
@@ -19,7 +19,7 @@ const MyCart = () => {
           <Typography variant="custom" className="text-2xl font-semibold">
             My Cart
           </Typography>
-          <Typography variant="paragraph1" className="font-normal mt-2">
+          <Typography variant="paragraph1" className="font-normal">
             Shopping is happy
           </Typography>
         </div>

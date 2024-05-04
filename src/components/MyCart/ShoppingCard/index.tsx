@@ -22,7 +22,7 @@ const ShoppingCard = ({
   const [counter, setCounter] = useState(1);
 
   return (
-    <div className="bg-white rounded-2xl flex p-4 md:mt-4">
+    <div className="bg-white rounded-2xl flex p-4 md:mt-2">
       <div>
         <img src={img} className="rounded-xl h-full min-w-[120px]" alt="" />
       </div>

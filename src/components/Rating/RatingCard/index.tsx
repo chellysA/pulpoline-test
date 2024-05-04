@@ -7,7 +7,7 @@ interface IRatingProps {
 const RatingCard = ({ title, quantity }: IRatingProps) => {
   return (
     <div
-      className="bg-white rounded-lg min-w-[182px] md:min-w-[297px] flex flex-col justify-center items-center"
+      className="bg-white rounded-l flex flex-col justify-center items-center"
       data-aos="flip-left"
       data-aos-delay="600"
     >

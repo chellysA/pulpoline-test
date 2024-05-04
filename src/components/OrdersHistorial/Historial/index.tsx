@@ -8,7 +8,7 @@ interface IProps {
 const Historial: React.FC<IProps> = ({ products }) => {
   return (
     <>
-      <div className="grid grid-flow-row auto-rows-max gap-y-2 overflow-auto lg:h-[385px]">
+      <div className="grid grid-flow-row auto-rows-max gap-y-2 overflow-auto h-full xl:max-h-[385px]">
         {products.map((product, index) => (
           <OrdersHistorialCard
             key={index + product.id}
